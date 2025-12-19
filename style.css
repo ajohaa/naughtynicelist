@@ -1,18 +1,16 @@
 .container {
     position: relative;
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 13px;
     border-radius: 10px;
-    background-image: repeating-linear-gradient(
-        45deg,
-        #ffffff,
-        #ffffff 20px,
-        /* Add 1px of blur to the transition between white and red */
-        #ff0000 calc(20px + 2px), 
-        #ff0000 40px,
-        /* Add 1px of blur to the transition back to white */
-        #ffffff calc(40px + 2px)
-    );
+    background-image: repeating-linear-gradient(45deg,
+            #ffffff,
+            hsl(0, 0%, 100%) 20px,
+            /* Add 2px of blur to the transition between white and red */
+            #e73d3d calc(20px + 2px),
+            #e73d3d 40px,
+            /* Add 2px of blur to the transition back to white */
+            #ffffff calc(40px + 2px));
 }
 
 .card {
@@ -29,7 +27,7 @@ h1 {
     font-style: normal;
     color: #77c7f5
 }
-
+hi
 h2 {
     font-family: tuppence, serif;
     font-weight: 400;
@@ -48,4 +46,36 @@ h2 {
     font-weight: 400;
     font-style: normal;
     color: #37af4b;
+}
+
+/* CSS */
+.btn {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    background-color: #c2fbd7;
+    color: green;
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+.btn:focus-visible {
+    outline: 2px solid rgba(44, 187, 99, 0.6);
+    outline-offset: 4px;
 }
