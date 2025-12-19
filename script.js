@@ -17,11 +17,9 @@ function checkNaughtyOrNice() {
     const q5 = document.getElementById("q5").value;
     const q6 = document.getElementById("q6").value;
     const score = getPoints(q1) + getPoints(q2) + getPoints(q3) + getPoints(q4) + getPoints(q5) + getPoints(q6);
-    if (score > 2.5) {
-        alert("You are nice this year!");
-    } else if (score < 2.5) {
-        alert("You are naughty this year!");
+    if (score > 3) {
+        alert("Ho ho ho, on the nice list you go!");
     } else {
-        alert("santa will determine your fate.");
-    }
-}                               
+        alert("Boo hoo hoo, it's the naughty list for you!");
+    } 
+}

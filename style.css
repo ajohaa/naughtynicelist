@@ -1,1 +1,56 @@
-/* no css yet... sad face :( */
+
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+border: 6px solid transparent;
+    margin: 10px;
+}
+
+
+.candy-cane-border {
+  /* Creates the red and white diagonal stripe pattern */
+  border-image-source: repeating-linear-gradient(
+    45deg,
+    #fff,      /* White start */
+    #fff 8px,  /* White end at 8px */
+    #ff0000,   /* Red start */
+    #ff0000 16px /* Red end at 16px. The pattern repeats every 16px */
+  );
+  /* Ensures the image covers the entire border area */
+  border-image-slice: 1; 
+  /* Sets the actual width of the border */
+  border-width: 15px; 
+}
+
+h1 {
+    font-family: ff-scala-jewel-crystal, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: tuppence, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Naughty {
+    font-family: dirtstorm, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #d35656;
+}
+    .And {
+        font-family: tuppence, serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .Nice {
+        font-family: chonky-poster, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #37af4b;
+    }
