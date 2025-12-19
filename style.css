@@ -1,33 +1,33 @@
-
+.container {
+    position: relative;
+    margin-top: 30px;
+    padding: 13px;
+    border-radius: 10px;
+    background-image: repeating-linear-gradient(
+        45deg,
+        #ffffff,
+        #ffffff 20px,
+        /* Add 1px of blur to the transition between white and red */
+        #ff0000 calc(20px + 2px), 
+        #ff0000 40px,
+        /* Add 1px of blur to the transition back to white */
+        #ffffff calc(40px + 2px)
+    );
+}
 
 .card {
     background-color: #f0f0f0;
     border-radius: 10px;
     padding: 20px;
-border: 6px solid transparent;
+    border: 6px solid transparent;
     margin: 10px;
-}
-
-
-.candy-cane-border {
-  /* Creates the red and white diagonal stripe pattern */
-  border-image-source: repeating-linear-gradient(
-    45deg,
-    #fff,      /* White start */
-    #fff 8px,  /* White end at 8px */
-    #ff0000,   /* Red start */
-    #ff0000 16px /* Red end at 16px. The pattern repeats every 16px */
-  );
-  /* Ensures the image covers the entire border area */
-  border-image-slice: 1; 
-  /* Sets the actual width of the border */
-  border-width: 15px; 
 }
 
 h1 {
     font-family: ff-scala-jewel-crystal, sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #77c7f5
 }
 
 h2 {
@@ -42,15 +42,10 @@ h2 {
     font-style: normal;
     color: #d35656;
 }
-    .And {
-        font-family: tuppence, serif;
-        font-weight: 400;
-        font-style: normal;
-    }
 
-    .Nice {
-        font-family: chonky-poster, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        color: #37af4b;
-    }
+.Nice {
+    font-family: chonky-poster, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #37af4b;
+}
